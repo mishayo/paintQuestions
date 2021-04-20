@@ -56,15 +56,47 @@
 		9903E879262F469A00AA995F /* paintQuestions */ = {
 			isa = PBXGroup;
 			children = (
-				9903E87A262F469A00AA995F /* AppDelegate.swift */,
-				9903E87C262F469A00AA995F /* SceneDelegate.swift */,
-				9903E87E262F469A00AA995F /* ViewController.swift */,
-				9903E880262F469A00AA995F /* Main.storyboard */,
-				9903E883262F469A00AA995F /* Assets.xcassets */,
-				9903E885262F469A00AA995F /* LaunchScreen.storyboard */,
-				9903E888262F469A00AA995F /* Info.plist */,
+				9903E892262F46E400AA995F /* VeiwControllers */,
+				9903E891262F46D400AA995F /* Storyboards */,
+				9903E894262F473800AA995F /* Supports */,
+				9903E897262F478500AA995F /* Resources */,
 			);
 			path = paintQuestions;
+			sourceTree = "<group>";
+		};
+		9903E891262F46D400AA995F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9903E885262F469A00AA995F /* LaunchScreen.storyboard */,
+				9903E880262F469A00AA995F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9903E892262F46E400AA995F /* VeiwControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9903E87E262F469A00AA995F /* ViewController.swift */,
+			);
+			path = VeiwControllers;
+			sourceTree = "<group>";
+		};
+		9903E894262F473800AA995F /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				9903E888262F469A00AA995F /* Info.plist */,
+				9903E87C262F469A00AA995F /* SceneDelegate.swift */,
+				9903E87A262F469A00AA995F /* AppDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		9903E897262F478500AA995F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9903E883262F469A00AA995F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TG8B85Z23T;
-				INFOPLIST_FILE = paintQuestions/Info.plist;
+				INFOPLIST_FILE = paintQuestions/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.practice.paintQuestions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TG8B85Z23T;
-				INFOPLIST_FILE = paintQuestions/Info.plist;
+				INFOPLIST_FILE = paintQuestions/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.practice.paintQuestions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
