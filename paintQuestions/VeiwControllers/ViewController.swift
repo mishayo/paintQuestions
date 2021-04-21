@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionBButton: UIButton!
     @IBOutlet weak var questionCButton: UIButton!
     @IBOutlet weak var questionDButton: UIButton!
-    
- 
+     
     var aQuestion = ""
     var bQuestion = ""
     var cQuestion = ""
