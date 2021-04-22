@@ -9,7 +9,12 @@ import UIKit
 
 
 class ViewController: UIViewController {
-    @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var mainImage: UIImageView! {
+        didSet {
+            mainImage.layer.cornerRadius = 10
+            mainImage.contentMode = .scaleToFill
+        }
+    }
     
     @IBOutlet weak var questionAButton: UIButton!
     @IBOutlet weak var questionBButton: UIButton!
@@ -25,11 +30,11 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        mainImage.layer.cornerRadius = 10
         super.viewDidLoad()
+        roundCornerButton()
         setQuestions()
-        
         setTitle()
-       
         mainImage.image = UIImage(named: imageName)
         
     }
@@ -48,30 +53,50 @@ class ViewController: UIViewController {
         case .aQuestion:
             if imageName != aQuestion {
                 questionAButton.backgroundColor = UIColor.systemRed
+                questionBButton.backgroundColor = view.backgroundColor
+                questionCButton.backgroundColor = view.backgroundColor
+                questionDButton.backgroundColor = view.backgroundColor
             } else {
                 questionAButton.backgroundColor = UIColor.systemGreen
-                trueAnswer()
+                questionBButton.backgroundColor = view.backgroundColor
+                questionCButton.backgroundColor = view.backgroundColor
+                questionDButton.backgroundColor = view.backgroundColor
             }
         case .bQuestion:
             if imageName != bQuestion {
                 questionBButton.backgroundColor = UIColor.systemRed
+                questionAButton.backgroundColor = view.backgroundColor
+                questionCButton.backgroundColor = view.backgroundColor
+                questionDButton.backgroundColor = view.backgroundColor
             } else {
                 questionBButton.backgroundColor = UIColor.systemGreen
-                trueAnswer()
+                questionAButton.backgroundColor = view.backgroundColor
+                questionCButton.backgroundColor = view.backgroundColor
+                questionDButton.backgroundColor = view.backgroundColor
             }
         case .cQuestion:
             if imageName != cQuestion {
                 questionCButton.backgroundColor = UIColor.systemRed
+                questionAButton.backgroundColor = view.backgroundColor
+                questionBButton.backgroundColor = view.backgroundColor
+                questionDButton.backgroundColor = view.backgroundColor
             } else {
                 questionCButton.backgroundColor = UIColor.systemGreen
-                trueAnswer()
+                questionAButton.backgroundColor = view.backgroundColor
+                questionBButton.backgroundColor = view.backgroundColor
+                questionDButton.backgroundColor = view.backgroundColor
             }
         case .dQuestion:
             if imageName != dQuestion {
                 questionDButton.backgroundColor = UIColor.systemRed
+                questionAButton.backgroundColor = view.backgroundColor
+                questionBButton.backgroundColor = view.backgroundColor
+                questionCButton.backgroundColor = view.backgroundColor
             } else {
                 questionDButton.backgroundColor = UIColor.systemGreen
-                trueAnswer()
+                questionAButton.backgroundColor = view.backgroundColor
+                questionBButton.backgroundColor = view.backgroundColor
+                questionCButton.backgroundColor = view.backgroundColor
             }
         }
     
@@ -89,10 +114,13 @@ class ViewController: UIViewController {
     @IBAction func pressDButton() {
         actionForPress(for: .dQuestion)
     }
+    @IBAction func pressNextButton() {
+        trueAnswer()
+    }
     
     
     func trueAnswer() {
-        sleep(1)
+        
         setQuestions()
         setTitle()
         mainImage.image = UIImage(named: imageName)
@@ -109,6 +137,7 @@ class ViewController: UIViewController {
         dQuestion = fourAnimals[3]
         imageName = fourAnimals.randomElement() ?? aQuestion
         mainImage.image = UIImage(named: imageName)
+        
     }
     
     func getBackgroundColor() {
@@ -123,6 +152,12 @@ class ViewController: UIViewController {
         questionBButton.setTitle("\(bQuestion) : C", for: .normal)
         questionCButton.setTitle("B : \(cQuestion)", for: .normal)
         questionDButton.setTitle("\(dQuestion) : D", for: .normal)
+    }
+    func roundCornerButton() {
+        questionAButton.layer.cornerRadius = 10
+        questionBButton.layer.cornerRadius = 10
+        questionCButton.layer.cornerRadius = 10
+        questionDButton.layer.cornerRadius = 10
     }
 }
 
