@@ -154,9 +154,9 @@ class ViewController: UIViewController {
     
     func setTitle() {
         questionAButton.setTitle("A : \(aQuestion)", for: .normal)
-        questionBButton.setTitle("\(bQuestion) : C", for: .normal)
+        questionBButton.setTitle("\(bQuestion) : C  ", for: .normal)
         questionCButton.setTitle("B : \(cQuestion)", for: .normal)
-        questionDButton.setTitle("\(dQuestion) : D", for: .normal)
+        questionDButton.setTitle("\(dQuestion) : D  ", for: .normal)
     }
     func roundCornerButton() {
         questionAButton.layer.cornerRadius = 10
