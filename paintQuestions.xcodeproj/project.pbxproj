@@ -14,6 +14,7 @@
 		9903E884262F469A00AA995F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9903E883262F469A00AA995F /* Assets.xcassets */; };
 		9903E887262F469A00AA995F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9903E885262F469A00AA995F /* LaunchScreen.storyboard */; };
 		9903E8C2262F813400AA995F /* enimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903E8C1262F813400AA995F /* enimals.swift */; };
+		990FDC562631EA22009A2143 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990FDC552631EA22009A2143 /* ChoiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9903E886262F469A00AA995F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9903E888262F469A00AA995F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9903E8C1262F813400AA995F /* enimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enimals.swift; sourceTree = "<group>"; };
+		990FDC552631EA22009A2143 /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		9903E892262F46E400AA995F /* VeiwControllers */ = {
 			isa = PBXGroup;
 			children = (
+				990FDC552631EA22009A2143 /* ChoiceViewController.swift */,
 				9903E87E262F469A00AA995F /* ViewController.swift */,
 			);
 			path = VeiwControllers;
@@ -190,6 +193,7 @@
 			files = (
 				9903E87F262F469A00AA995F /* ViewController.swift in Sources */,
 				9903E8C2262F813400AA995F /* enimals.swift in Sources */,
+				990FDC562631EA22009A2143 /* ChoiceViewController.swift in Sources */,
 				9903E87B262F469A00AA995F /* AppDelegate.swift in Sources */,
 				9903E87D262F469A00AA995F /* SceneDelegate.swift in Sources */,
 			);

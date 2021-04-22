@@ -9,6 +9,7 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var mainImage: UIImageView! {
         didSet {
             mainImage.layer.cornerRadius = 10
@@ -30,8 +31,8 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        mainImage.layer.cornerRadius = 10
         super.viewDidLoad()
+        
         roundCornerButton()
         setQuestions()
         setTitle()
@@ -116,6 +117,10 @@ class ViewController: UIViewController {
     }
     @IBAction func pressNextButton() {
         trueAnswer()
+    }
+    
+    @IBAction func pressCancelButton() {
+        dismiss(animated: true)
     }
     
     
