@@ -85,7 +85,6 @@ class ChoiceTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let arrayNames = TypeEnimals.allCases
         let name = arrayNames[indexPath.row]
-        //let names = typeEnimalString(for: name)
         mainVS.kindOfType = name
         
     }

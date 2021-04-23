@@ -14,46 +14,38 @@ struct Enimals {
     var fishes: Set <String> = []
     var birds: Set <String> = []
     
-   static func getArrayFourEnimal() -> Set<String> {
+   /*static func getArrayFourEnimal() -> Set<String> {
         var arrayEnimals: Set <String> = []
         while  arrayEnimals.count != 4 {
             let enimal = someEnimal.enimals.randomElement()
         arrayEnimals.insert(enimal!)
         }
         return  arrayEnimals
-    }
+    }*/
     
-    static func getArrayFourQuetions(for typeEnimals: TypeEnimals) -> Set<String> {
+    
+    static func getArrayFourQuetions(for typeEnimals: TypeEnimals) -> Set <String> {
+        var arrayEnimals: Set <String> = []
         switch typeEnimals {
         case .enimal:
-            func getArrayFourEnimal() -> Set<String> {
-                var arrayEnimals: Set <String> = []
                 while  arrayEnimals.count != 4 {
                     let enimal = someEnimal.enimals.randomElement()
                 arrayEnimals.insert(enimal!)
                 }
                 return  arrayEnimals
-            }
         case .fish:
-            func getArrayFourEnimal() -> Set<String> {
-                var arrayEnimals: Set <String> = []
                 while  arrayEnimals.count != 4 {
-                    let enimal = someFishes.enimals.randomElement()
+                    let enimal = someFishes.fishes.randomElement()
                 arrayEnimals.insert(enimal!)
                 }
                 return  arrayEnimals
-            }
         case .birds:
-            func getArrayFourEnimal() -> Set<String> {
-                var arrayEnimals: Set <String> = []
                 while  arrayEnimals.count != 4 {
-                    let enimal = someBirds.enimals.randomElement()
+                    let enimal = someBirds.birds.randomElement()
                 arrayEnimals.insert(enimal!)
                 }
                 return  arrayEnimals
-            }
-        }
-        return getArrayFourEnimal()
+        }       
     }
     
     
@@ -62,6 +54,7 @@ struct Enimals {
 var someEnimal = Enimals(enimals: ["Squirrel", "Wolf", "Raccoon", "Tiger", "Bear", "Fox", "Lion", "Rat", "Cat", "Dog", "Jiraffe"])
 var someFishes = Enimals(fishes: ["Pike", "Goldfish", "Shark", "Carp", "Perch", "Salmon", "Tuna", "Catfish"])
 var someBirds = Enimals(birds: ["Swallow", "Parrot", "Duck", "Flamingo", "Ostrich", "Swan"])
+
 
 enum TypeEnimals: CaseIterable {
     case enimal
@@ -72,11 +65,11 @@ enum TypeEnimals: CaseIterable {
 func typeEnimalString(for type: TypeEnimals) -> String {
     switch type {
     case .enimal:
-        return "Enimals"
+        return "ENIMAL"
     case .fish:
-        return "Fishes"
+        return "FISH"
     case .birds:
-        return "Birds"
+        return "BIRD"
     }
 }
 

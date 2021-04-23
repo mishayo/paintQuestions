@@ -34,7 +34,7 @@
                             <outlet property="delegate" destination="60o-9M-z5e" id="2VU-ce-dIL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Select Group" id="ZpA-og-5j3"/>
+                    <navigationItem key="navigationItem" title="Select Group" largeTitleDisplayMode="always" id="ZpA-og-5j3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9h-8e-VAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,6 +182,7 @@
                         <outlet property="questionBButton" destination="txZ-Hb-f6F" id="82T-d0-n8P"/>
                         <outlet property="questionCButton" destination="4kE-OE-LuZ" id="lhG-cY-T8i"/>
                         <outlet property="questionDButton" destination="IZK-4z-fmR" id="Ucs-or-7Qf"/>
+                        <outlet property="whatIsGroupLable" destination="NjG-0c-M1Q" id="eby-4S-mH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -193,8 +194,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="95L-Rc-HzB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bVG-iO-o1i">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bVG-iO-o1i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
             mainImage.contentMode = .scaleToFill
         }
     }
+    @IBOutlet weak var whatIsGroupLable: UILabel!
     
     @IBOutlet weak var questionAButton: UIButton!
     @IBOutlet weak var questionBButton: UIButton!
@@ -29,12 +30,11 @@ class ViewController: UIViewController {
       
     var imageName = ""
     
-    var kindOfType: TypeEnimals! = nil
-    
+    var kindOfType: TypeEnimals!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        whatIsGroupLable.text = "WHAT IS THE NAME OF THIS \(typeEnimalString(for: kindOfType))?"
         roundCornerButton()
         setQuestions()
         setTitle()
