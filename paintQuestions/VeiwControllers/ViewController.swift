@@ -29,6 +29,8 @@ class ViewController: UIViewController {
       
     var imageName = ""
     
+    var kindOfType: TypeEnimals! = nil
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -133,7 +135,7 @@ class ViewController: UIViewController {
     }
     
     func setQuestions() {
-        let arrayFourEnimals = Enimals.getArrayFourEnimal()
+        let arrayFourEnimals = Enimals.getArrayFourQuetions(for: kindOfType)
         var fourAnimals = [String]()
        fourAnimals += arrayFourEnimals
         aQuestion = fourAnimals[0]

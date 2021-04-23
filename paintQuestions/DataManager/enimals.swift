@@ -23,7 +23,7 @@ struct Enimals {
         return  arrayEnimals
     }
     
-    static func getArrayFourQuetions(for typeEnimals: TypeEnimals) {
+    static func getArrayFourQuetions(for typeEnimals: TypeEnimals) -> Set<String> {
         switch typeEnimals {
         case .enimal:
             func getArrayFourEnimal() -> Set<String> {
@@ -53,6 +53,7 @@ struct Enimals {
                 return  arrayEnimals
             }
         }
+        return getArrayFourEnimal()
     }
     
     
@@ -70,7 +71,6 @@ enum TypeEnimals: CaseIterable {
 
 func typeEnimalString(for type: TypeEnimals) -> String {
     switch type {
-    
     case .enimal:
         return "Enimals"
     case .fish:
