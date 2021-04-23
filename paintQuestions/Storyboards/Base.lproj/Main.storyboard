@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="95L-Rc-HzB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dBY-Vk-bRW">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="IEy-fr-kwy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="IEy-fr-kwy">
                                 <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IEy-fr-kwy" id="6X7-vY-FNC">
@@ -38,7 +38,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9h-8e-VAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="75"/>
+            <point key="canvasLocation" x="2287.5" y="75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -66,11 +66,11 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iUk-uP-p3i">
                                                 <rect key="frame" x="0.0" y="88" width="288" height="68"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qyU-xi-ic4">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qyU-xi-ic4">
                                                         <rect key="frame" x="0.0" y="0.0" width="139" height="68"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gg2-BA-iQi">
-                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="12"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="29"/>
                                                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
                                                                 <state key="normal" title="A : Polipopo">
                                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -80,7 +80,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kE-OE-LuZ">
-                                                                <rect key="frame" x="0.0" y="22" width="139" height="46"/>
+                                                                <rect key="frame" x="0.0" y="39" width="139" height="29"/>
                                                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
                                                                 <state key="normal" title="C : Lerotitu">
                                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -91,11 +91,11 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k1A-yU-YKP">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k1A-yU-YKP">
                                                         <rect key="frame" x="149" y="0.0" width="139" height="68"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txZ-Hb-f6F">
-                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="12"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="139" height="29"/>
                                                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
                                                                 <state key="normal" title="Feruminknknnnasa : B">
                                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -105,7 +105,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZK-4z-fmR">
-                                                                <rect key="frame" x="0.0" y="22" width="139" height="46"/>
+                                                                <rect key="frame" x="0.0" y="39" width="139" height="29"/>
                                                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
                                                                 <state key="normal" title="Feruki : D">
                                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -187,25 +187,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2011.875" y="76.056338028169009"/>
+            <point key="canvasLocation" x="3009.375" y="76.056338028169009"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="SHB-zB-qXW">
+        <!--Select Group-->
+        <scene sceneID="cfG-Uk-bMW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="95L-Rc-HzB" sceneMemberID="viewController">
+                <navigationController title="Select Group" automaticallyAdjustsScrollViewInsets="NO" id="dBY-Vk-bRW" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bVG-iO-o1i">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ch5-ms-oRc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="60o-9M-z5e" kind="relationship" relationship="rootViewController" id="Ydy-un-6CF"/>
+                        <segue destination="60o-9M-z5e" kind="relationship" relationship="rootViewController" id="ygx-Zl-oG8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nnr-6n-S1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKi-xR-Ryi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="75"/>
+            <point key="canvasLocation" x="1290" y="75"/>
         </scene>
     </scenes>
     <resources>

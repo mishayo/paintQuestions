@@ -27,9 +27,7 @@ class ViewController: UIViewController {
     var bQuestion = ""
     var cQuestion = ""
     var dQuestion = ""
-      
     var imageName = ""
-    
     var kindOfType: TypeEnimals!
     
     override func viewDidLoad() {
@@ -49,6 +47,50 @@ class ViewController: UIViewController {
         case bQuestion
         case cQuestion
         case dQuestion
+    }
+    
+
+    
+    @IBAction func pressAButton() {
+        actionForPress(for: .aQuestion)
+    }
+    @IBAction func pressBButton() {
+        actionForPress(for: .bQuestion)
+    }
+    @IBAction func pressCButton() {
+        actionForPress(for: .cQuestion)
+    }
+    @IBAction func pressDButton() {
+        actionForPress(for: .dQuestion)
+    }
+    @IBAction func pressNextButton() {
+        trueAnswer()
+    }
+    
+    @IBAction func pressCancelButton() {
+        dismiss(animated: true)
+    }
+    
+    
+    func trueAnswer() {
+        
+        setQuestions()
+        setTitle()
+        mainImage.image = UIImage(named: imageName)
+        getBackgroundColor()
+    }
+    
+    func setQuestions() {
+        let arrayFourEnimals = Enimals.getArrayFourQuetions(for: kindOfType)
+        var fourAnimals = [String]()
+       fourAnimals += arrayFourEnimals
+        aQuestion = fourAnimals[0]
+        bQuestion = fourAnimals[1]
+        cQuestion = fourAnimals[2]
+        dQuestion = fourAnimals[3]
+        imageName = fourAnimals.randomElement() ?? aQuestion
+        mainImage.image = UIImage(named: imageName)
+        
     }
     
     func actionForPress(for questions: Questions) {
@@ -103,48 +145,6 @@ class ViewController: UIViewController {
             }
         }
     
-    }
-    
-    @IBAction func pressAButton() {
-        actionForPress(for: .aQuestion)
-    }
-    @IBAction func pressBButton() {
-        actionForPress(for: .bQuestion)
-    }
-    @IBAction func pressCButton() {
-        actionForPress(for: .cQuestion)
-    }
-    @IBAction func pressDButton() {
-        actionForPress(for: .dQuestion)
-    }
-    @IBAction func pressNextButton() {
-        trueAnswer()
-    }
-    
-    @IBAction func pressCancelButton() {
-        dismiss(animated: true)
-    }
-    
-    
-    func trueAnswer() {
-        
-        setQuestions()
-        setTitle()
-        mainImage.image = UIImage(named: imageName)
-        getBackgroundColor()
-    }
-    
-    func setQuestions() {
-        let arrayFourEnimals = Enimals.getArrayFourQuetions(for: kindOfType)
-        var fourAnimals = [String]()
-       fourAnimals += arrayFourEnimals
-        aQuestion = fourAnimals[0]
-        bQuestion = fourAnimals[1]
-        cQuestion = fourAnimals[2]
-        dQuestion = fourAnimals[3]
-        imageName = fourAnimals.randomElement() ?? aQuestion
-        mainImage.image = UIImage(named: imageName)
-        
     }
     
     func getBackgroundColor() {
