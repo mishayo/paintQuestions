@@ -39,15 +39,6 @@ class ViewController: UIViewController {
         mainImage.image = UIImage(named: imageName)
         
     }
-
-    
-    
-    enum Questions {
-        case aQuestion
-        case bQuestion
-        case cQuestion
-        case dQuestion
-    }
     
 
     
@@ -71,12 +62,18 @@ class ViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    enum Questions {
+        case aQuestion
+        case bQuestion
+        case cQuestion
+        case dQuestion
+    }
     
     func trueAnswer() {
         
         setQuestions()
         setTitle()
-        mainImage.image = UIImage(named: imageName)
+        //mainImage.image = UIImage(named: imageName)
         getBackgroundColor()
     }
     
@@ -88,7 +85,7 @@ class ViewController: UIViewController {
         bQuestion = fourAnimals[1]
         cQuestion = fourAnimals[2]
         dQuestion = fourAnimals[3]
-        imageName = fourAnimals.randomElement() ?? aQuestion
+        imageName = fourAnimals.randomElement()  ?? aQuestion
         mainImage.image = UIImage(named: imageName)
         
     }
@@ -156,9 +153,9 @@ class ViewController: UIViewController {
     
     func setTitle() {
         questionAButton.setTitle("A : \(aQuestion)", for: .normal)
-        questionBButton.setTitle("\(bQuestion) : C  ", for: .normal)
+        questionBButton.setTitle("C : \(bQuestion)", for: .normal)
         questionCButton.setTitle("B : \(cQuestion)", for: .normal)
-        questionDButton.setTitle("\(dQuestion) : D  ", for: .normal)
+        questionDButton.setTitle("D : \(dQuestion)", for: .normal)
     }
     func roundCornerButton() {
         questionAButton.layer.cornerRadius = 10
